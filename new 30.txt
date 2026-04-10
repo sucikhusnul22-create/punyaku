@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    color: white;
+    animation: fadeDown 1s ease-in-out;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    text-align: center;
+    animation: fadeUp 1.2s ease-in-out;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Animations */
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Welcome to My Landing Page</h1>
+    <p>Solusi terbaik untuk kebutuhan Anda</p>
+</header>
+
+<div class="container">
+    <h2>Produk Unggulan</h2>
+    <p>Kami menyediakan produk berkualitas dengan harga terjangkau.</p>
+
+    <!-- Gambar lokal -->
+    <img src="gambar.jpg" alt="Produk">
+
+    <br>
+    <a href="#" class="btn">Beli Sekarang</a>
+</div>
+
+</body>
+</html>
